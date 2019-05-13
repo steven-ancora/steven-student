@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var positionX = 0;
+            function hello()
+            {
+                //alert(positionX);
+                //alert(document.getElementById("demo"));
+                //document.getElementById("demo").style.color = "#f00";
+                positionX += 10;
+                document.getElementById("demo").style.top = positionX + "px";
+            }
+        </script>
+    </head>
+    <body>
+        <div style="position:absolute; top: 0px; left: 100px;" id="demo">Hello World!</div>
+        <button onClick="hello();">Click Me</button>
+    </body>
+</html>
